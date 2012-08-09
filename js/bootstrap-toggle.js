@@ -80,7 +80,9 @@
    * Toggle Definition
    */
   $.fn.toggle = function (options) {
-    return new Toggle(this, typeof options == 'object' ? options : {})
+    return this.each(function() {
+		    new Toggle(this, typeof options == 'object' ? options : {})
+	   });
   }
   
   $.fn.toggle.defaults = {
