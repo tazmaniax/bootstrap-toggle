@@ -81,8 +81,8 @@
    */
   $.fn.toggle = function (options) {
     return this.each(function() {
-		    new Toggle(this, typeof options == 'object' ? options : {})
-	   });
+      new Toggle(this, typeof options == 'object' ? options : {})
+    });
   }
   
   $.fn.toggle.defaults = {
