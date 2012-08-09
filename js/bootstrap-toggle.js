@@ -37,7 +37,7 @@
     
     // Setup Click
     this.$element.click(function (e) {
-      if(self.options.onClick) self.options.onClick(e, self.$checkbox.is(':checked'))
+      if(self.options.onClick) self.options.onClick(e, self.$checkbox, self.$checkbox.is(':checked'))
       self.toggle()
     });
   }
